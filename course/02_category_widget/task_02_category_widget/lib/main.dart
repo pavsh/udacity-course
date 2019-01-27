@@ -10,7 +10,6 @@ import 'package:flutter/material.dart';
 // More details at http://dart-lang.github.io/linter/lints/avoid_relative_lib_imports.html
 import 'package:task_02_category_widget/category.dart';
 
-
 const _categoryName = 'Cake';
 const _categoryIcon = Icons.cake;
 const _categoryColor = Colors.green;
@@ -31,8 +30,7 @@ class UnitConverterApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.green[100],
         body: Center(
-          
-          child: Category(_categoryName,_categoryColor,_categoryIcon),
+          child: Category(name:_categoryName,categoryColor: _categoryColor,categoryICon: _categoryIcon),
         ),
       ),
     );
